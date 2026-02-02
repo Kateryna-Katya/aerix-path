@@ -51,4 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // В будущем будем добавлять класс .reveal всем новым секциям
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 });
+    // (Добавьте это в уже существующий DOMContentLoaded)
+const revealElements = document.querySelectorAll('.reveal');
+revealElements.forEach(el => observer.observe(el));
 });
