@@ -5,29 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
-    <link rel="stylesheet" crossorigin href="/aerix-path/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/aerix-path/assets/styles-CzmyaxX9.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
+  <div class="container header__container">
+    <a href="/" class="logo">
+      <span class="logo__icon"></span>
+      <span class="logo__text">Aerix-Path</span>
+    </a>
     <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+      <ul class="nav__list">
+        <li><a href="#hero" class="nav__link">Главная</a></li>
+        <li><a href="#about" class="nav__link">О платформе</a></li>
+        <li><a href="#benefits" class="nav__link">Преимущества</a></li>
+        <li><a href="#innovations" class="nav__link">Инновации</a></li>
+        <li><a href="#blog" class="nav__link">Блог</a></li>
       </ul>
     </nav>
+    <div class="header__actions">
+      <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+      <button class="burger" aria-label="Menu">
+        <span></span>
+      </button>
+    </div>
   </div>
 </header>
-
 
     <main>
       <div class="container">
@@ -38,18 +41,60 @@
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a href="/" class="logo footer__logo">
+        <span class="logo__text">Aerix-Path</span>
       </a>
-    </p>
+      <p class="footer__tagline">Создаем цифровое будущее с помощью интеллектуальных алгоритмов.</p>
+    </div>
+
+    <div class="footer__nav">
+      <h4 class="footer__title">Навигация</h4>
+      <ul class="footer__links">
+        <li><a href="#hero">Главная</a></li>
+        <li><a href="#about">О платформе</a></li>
+        <li><a href="#benefits">Преимущества</a></li>
+        <li><a href="#innovations">Инновации</a></li>
+        <li><a href="#blog">Блог</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__legal">
+      <h4 class="footer__title">Документы</h4>
+      <ul class="footer__links">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+        <li><a href="terms.html">Terms of Use</a></li>
+        <li><a href="return.html">Return Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="personal-data-policy.html">Personal Data</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__contacts">
+      <h4 class="footer__title">Контакты</h4>
+      <ul class="footer__info">
+        <li>
+          <i data-lucide="phone" class="footer__icon"></i>
+          <a href="tel:+4930332214285">+49 303 322 142 85</a>
+        </li>
+        <li>
+          <i data-lucide="mail" class="footer__icon"></i>
+          <a href="mailto:hello@aerix-path.life">hello@aerix-path.life</a>
+        </li>
+        <li>
+          <i data-lucide="map-pin" class="footer__icon"></i>
+          <span>Friedrichstraße 171, 10117 Berlin, Germany</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <p>&copy; 2026 Aerix-Path. Предложение активно только в странах ЕС.</p>
+    </div>
   </div>
 </footer>
 
