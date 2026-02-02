@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aerix Path | Разработка AI-ассистентов и ботов</title>
+  <title>Контакты | Aerix Path</title>
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:%234efcca' /><stop offset='100%' style='stop-color:%238a2be2' /></linearGradient></defs><path d='M50 5 L95 50 L50 95 L5 50 Z' fill='url(%23g)' /><path d='M50 25 L75 50 L50 75 L25 50 Z' fill='rgba(10,11,16,0.8)' /></svg>"
     type="image/svg+xml">
@@ -14,6 +14,50 @@
     href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400&family=Montserrat:wght@400;600;800&display=swap"
     rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    /* Дополнительный стиль для карточек контактов */
+    .contact-page__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 60px;
+    }
+  
+    .contact-item {
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      padding: 40px;
+      border-radius: 24px;
+      text-align: center;
+      transition: var(--transition);
+    }
+  
+    .contact-item:hover {
+      border-color: var(--accent-mint);
+      transform: translateY(-10px);
+      background: rgba(255, 255, 255, 0.05);
+    }
+  
+    .contact-item i {
+      width: 40px;
+      height: 40px;
+      color: var(--accent-mint);
+      margin-bottom: 20px;
+    }
+  
+    .contact-item h3 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      color: #fff;
+    }
+  
+    .contact-item a,
+    .contact-item span {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      word-break: break-all;
+    }
+  </style>
   <script type="module" crossorigin src="/aerix-path/assets/main-C-KEV_dI.js"></script>
   <link rel="stylesheet" crossorigin href="/aerix-path/assets/main-h5oH9oBF.css">
 </head>
@@ -54,14 +98,34 @@
   </div>
 </div>
 
-    <main>
-      <div class="container">
-        <h1 class="main-title">
-          <span class="main-title-gradient">Welcome</span> to page 2
-        </h1>
-      </div>
-    </main>
+<main>
+  <section class="pages">
+    <div class="container">
+      <h1>Наши <span class="text-gradient">контакты</span></h1>
+      <p>Мы всегда открыты для новых проектов и предложений. Свяжитесь с нами любым удобным для вас способом.</p>
 
+      <div class="contact-page__grid">
+        <div class="contact-item">
+          <i data-lucide="phone"></i>
+          <h3>Телефон</h3>
+          <a href="tel:+4930332214285">+49 303 322 142 85</a>
+        </div>
+
+        <div class="contact-item">
+          <i data-lucide="mail"></i>
+          <h3>Электронная почта</h3>
+          <a href="mailto:hello@aerix-path.life">hello@aerix-path.life</a>
+        </div>
+
+        <div class="contact-item">
+          <i data-lucide="map-pin"></i>
+          <h3>Офис в Берлине</h3>
+          <span>Friedrichstraße 171, 10117 Berlin, Germany</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
     <footer class="footer">
   <div class="container footer__grid">
     <div class="footer__brand">
