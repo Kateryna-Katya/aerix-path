@@ -1113,3 +1113,63 @@ ul {
         display: none;
     }
 }
+/* --- ЮРИДИЧЕСКИЕ СТРАНИЦЫ --- */
+.pages {
+    padding: 160px 0 100px;
+    min-height: 80vh;
+}
+
+.pages h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    background: linear-gradient(90deg, var(--accent-mint), var(--accent-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pages h2 {
+    font-size: 1.8rem;
+    margin: 40px 0 20px;
+    color: #fff;
+}
+
+.pages p {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.pages ul {
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.pages ul li {
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    position: relative;
+    list-style: none;
+}
+
+.pages ul li::before {
+    content: "—";
+    position: absolute;
+    left: -25px;
+    color: var(--accent-mint);
+}
+
+.pages .container {
+    max-width: 850px;
+    /* Сужаем для лучшей читаемости текста */
+}
+
+@media (max-width: 768px) {
+    .pages h1 {
+        font-size: 2.2rem;
+    }
+
+    .pages h2 {
+        font-size: 1.5rem;
+    }
+}
