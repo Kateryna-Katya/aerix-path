@@ -53,5 +53,28 @@ document.addEventListener('DOMContentLoaded', () => {
 });
     // (Добавьте это в уже существующий DOMContentLoaded)
 const revealElements = document.querySelectorAll('.reveal');
-revealElements.forEach(el => observer.observe(el));
+    revealElements.forEach(el => observer.observe(el));
+    
 });
+// (Добавьте логику в существующий наблюдатель)
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            if (entry.target.parentElement.classList.contains('benefits__grid')) {
+                // Находим индекс карточки для задержки
+                const cards = Array.from(entry.target.parentElement.children);
+                const index = cards.indexOf(entry.target);
+                entry.target.style.transitionDelay = `${index * 0.15}s`;
+            }
+            entry.target.classList.add('visible');
+        }
+    });
+}, observerOptions);
+// Внутри вашего IntersectionObserver добавьте:
+if (entry.target.classList.contains('innovations__visual')) {
+    const lines = entry.target.querySelector('.tech-lines');
+    if (lines) {
+        lines.style.opacity = '1';
+        lines.style.transition = 'opacity 2s ease';
+    }
+}
