@@ -755,3 +755,361 @@ ul {
         order: 1;
     }
 }
+/* --- BLOG SECTION --- */
+.blog {
+    padding: 100px 0;
+    background: var(--bg-dark);
+}
+
+.blog__header {
+    margin-bottom: 60px;
+    text-align: left;
+    max-width: 800px;
+}
+
+.blog__title {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.blog__subtitle {
+    color: var(--text-muted);
+}
+
+.blog__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.blog-card {
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.blog-card:hover {
+    border-color: var(--accent-purple);
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.blog-card__image {
+    position: relative;
+    height: 200px;
+    background: #1a1c23;
+    /* Цвет плейсхолдера */
+}
+
+.blog-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    transition: var(--transition);
+}
+
+.blog-card:hover .blog-card__image img {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.blog-card__tag {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: var(--accent-purple);
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.blog-card__content {
+    padding: 30px;
+}
+
+.blog-card__title {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    color: #fff;
+}
+
+.blog-card__excerpt {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 25px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.blog-card__link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--accent-mint);
+}
+
+.blog-card__link i {
+    width: 16px;
+    transition: var(--transition);
+}
+
+.blog-card__link:hover i {
+    transform: translateX(5px);
+}
+
+.blog__footer {
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .blog__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- CONTACT SECTION --- */
+.contact {
+    padding: 120px 0;
+    position: relative;
+    background: radial-gradient(circle at bottom right, rgba(138, 43, 226, 0.1), transparent 40%);
+}
+
+.contact__grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.contact__badge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--accent-mint);
+    font-size: 0.9rem;
+    margin-top: 30px;
+}
+
+.contact__form-wrapper {
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    padding: 50px;
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.contact__form input[type="text"],
+.contact__form input[type="email"],
+.contact__form input[type="number"] {
+    width: 100%;
+    padding: 16px 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    color: #fff;
+    font-family: inherit;
+    transition: var(--transition);
+}
+
+.contact__form input:focus {
+    outline: none;
+    border-color: var(--accent-mint);
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.captcha-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.captcha-group label {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* Чекбокс */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    margin: 25px 0;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.btn--block {
+    width: 100%;
+}
+
+/* Сообщения формы */
+.form-message {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    display: none;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.form-message.success {
+    display: block;
+    background: rgba(78, 252, 202, 0.1);
+    color: var(--accent-mint);
+    border: 1px solid var(--accent-mint);
+}
+
+.form-message.error {
+    display: block;
+    background: rgba(255, 0, 0, 0.1);
+    color: #ff4e4e;
+    border: 1px solid #ff4e4e;
+}
+
+@media (max-width: 992px) {
+    .contact__grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contact__form-wrapper {
+        padding: 30px;
+    }
+}
+/* --- МОБИЛЬНОЕ МЕНЮ --- */
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+.burger span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: var(--accent-mint);
+    transition: var(--transition);
+}
+
+.burger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-dark);
+    z-index: 1500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+
+.mobile-menu__list {
+    text-align: center;
+}
+
+.mobile-menu__list li {
+    margin: 25px 0;
+}
+
+.mobile-link {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* --- COOKIE POPUP --- */
+.cookie-popup {
+    position: fixed;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 500px;
+    background: rgba(15, 17, 26, 0.95);
+    backdrop-filter: blur(15px);
+    border: 1px solid var(--glass-border);
+    padding: 20px 30px;
+    border-radius: 20px;
+    z-index: 3000;
+    transition: 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.cookie-popup.active {
+    bottom: 30px;
+}
+
+.cookie-popup__content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cookie-popup__icon {
+    color: var(--accent-mint);
+    flex-shrink: 0;
+}
+
+.cookie-popup__text {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+
+.cookie-popup__text a {
+    color: var(--accent-mint);
+    text-decoration: underline;
+}
+
+.btn--sm {
+    padding: 8px 20px;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 992px) {
+    .burger {
+        display: flex;
+    }
+
+    .header__actions .btn--primary {
+        display: none;
+    }
+}

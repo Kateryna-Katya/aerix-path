@@ -145,3 +145,105 @@
         </div>
     </div>
 </section>
+<section id="blog" class="blog">
+    <div class="container">
+        <div class="blog__header reveal">
+            <h2 class="blog__title">Постройте карьеру, которая <span class="text-gradient">работает на вас</span></h2>
+            <p class="blog__subtitle">Оцените перспективы проекта и изучите наши образовательные материалы по AI.</p>
+        </div>
+
+        <div class="blog__grid">
+            <article class="blog-card reveal">
+                <div class="blog-card__image">
+                    <img src="img/placeholder.png" alt="AI Insights">
+                    <span class="blog-card__tag">Технологии</span>
+                </div>
+                <div class="blog-card__content">
+                    <h3 class="blog-card__title">Как AI-инструменты решают реальные задачи бизнеса</h3>
+                    <p class="blog-card__excerpt">Разбираем пошаговый путь внедрения ассистентов в существующую
+                        инфраструктуру без опыта программирования.</p>
+                    <a href="#" class="blog-card__link">Читать далее <i data-lucide="arrow-right"></i></a>
+                </div>
+            </article>
+
+            <article class="blog-card reveal">
+                <div class="blog-card__image">
+                    <img src="img/placeholder.png" alt="Future Tech">
+                    <span class="blog-card__tag">Стратегия</span>
+                </div>
+                <div class="blog-card__content">
+                    <h3 class="blog-card__title">Переосмыслите подход к развитию своего проекта</h3>
+                    <p class="blog-card__excerpt">Почему алгоритмы нового поколения становятся стандартом для
+                        европейского рынка в 2026 году.</p>
+                    <a href="#" class="blog-card__link">Читать далее <i data-lucide="arrow-right"></i></a>
+                </div>
+            </article>
+
+            <article class="blog-card reveal">
+                <div class="blog-card__image">
+                    <img src="img/placeholder.png" alt="Growth">
+                    <span class="blog-card__tag">Обучение</span>
+                </div>
+                <div class="blog-card__content">
+                    <h3 class="blog-card__title">Быстрый старт в мире нейронных сетей</h3>
+                    <p class="blog-card__excerpt">Практики, применимые уже сегодня: как создать первого чат-бота за 10
+                        минут и масштабировать его.</p>
+                    <a href="#" class="blog-card__link">Читать далее <i data-lucide="arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+
+        <div class="blog__footer reveal">
+            <a href="#" class="btn btn--outline">Получить больше информации</a>
+        </div>
+    </div>
+</section>
+<section id="contact" class="contact">
+    <div class="container contact__grid">
+        <div class="contact__info reveal">
+            <span class="about__label">Свяжитесь с нами</span>
+            <h2 class="about__title">Бесплатная консультация <br><span class="text-gradient">по всем вопросам</span>
+            </h2>
+            <p class="about__text">Оставьте заявку, и наш эксперт поможет подобрать AI-решение под ваши задачи в течение
+                24 часов.</p>
+
+            <div class="contact__badge">
+                <i data-lucide="shield-check"></i>
+                <span>Ваши данные защищены по стандартам GDPR</span>
+            </div>
+        </div>
+
+        <div class="contact__form-wrapper reveal">
+            <form id="ai-contact-form" class="contact__form">
+                <div class="form-group">
+                    <input type="text" id="user_name" name="name" placeholder="Ваше имя" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" id="user_email" name="email" placeholder="E-mail" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="user_phone" name="phone" placeholder="Телефон (только цифры)" required>
+                </div>
+
+                <div class="form-group captcha-group">
+                    <label for="captcha">Сколько будет: <span id="captcha-question"></span>?</label>
+                    <input type="number" id="captcha_answer" name="captcha" placeholder="Ответ" required>
+                </div>
+
+                <label class="checkbox-container">
+                    <input type="checkbox" required>
+                    <span class="checkmark"></span>
+                    <span class="checkbox-text">Я согласен на обработку персональных данных</span>
+                </label>
+
+                <button type="submit" class="btn btn--primary btn--block" id="submit-btn">
+                    <span>Запросить доступ</span>
+                </button>
+
+                <div id="form-message" class="form-message"></div>
+            </form>
+        </div>
+    </div>
+</section>
